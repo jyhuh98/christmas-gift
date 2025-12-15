@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #fdf7f2;
+  color: #5a2a2a;
+  text-align: center;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #8b1e1e, #5a2a2a);
+  color: #fff;
+}
+
+.hero h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 3.5rem;
+}
+
+.letter, .ending {
+  background: #fff6ee;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.gallery .photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.music iframe {
+  margin-top: 20px;
+}
+
+.snow::before {
+  content: "❄️ ❤️ ❄️ ❤️ ❄️";
+  position: fixed;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  font-size: 24px;
+  animation: fall 10s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh);
+  }
+}
+
+.heart-btn {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.heart-btn:hover {
+  transform: scale(1.2);
+}
+
+.spotify {
+  max-width: 500px;
+  margin: 20px auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
